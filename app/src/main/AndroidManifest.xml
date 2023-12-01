@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.quickash">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name="androidx.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Quickash">
+        <activity
+            android:name=".Resibo2"
+            android:exported="false" />
+        <activity
+            android:name=".Resibo1"
+            android:exported="false" />
+        <activity
+            android:name=".Resibo"
+            android:exported="false" />
+        <activity
+            android:name=".Statistics"
+            android:exported="false" />
+        <activity
+            android:name=".Verify"
+            android:exported="false" />
+        <activity
+            android:name=".BankMenu"
+            android:label="@string/title_activity_bank_menu"
+            android:theme="@style/Theme.Quickash.NoActionBar" />
+        <activity android:name=".ForgotPass" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".RegisterUser" />
+        <activity android:name=".Login" />
+        <activity
+            android:name=".MainMenuBank"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

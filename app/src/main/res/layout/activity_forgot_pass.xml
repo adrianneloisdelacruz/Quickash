@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gray_bg"
+    tools:context=".ForgotPass">
+
+    <ImageView
+        android:id="@+id/quickashlogo"
+        android:src="@drawable/csbank_logo"
+        android:layout_width="71dp"
+        android:layout_height="78dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:id="@+id/quickashtext"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/bangers"
+        android:text="Quickash"
+        android:textSize="40dp"
+        tools:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/signin_text"
+        android:layout_width="110dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="148dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="153dp"
+        android:fontFamily="sans-serif-black"
+        android:text=""
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="30dp"
+        android:textStyle="italic" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/signin_text"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/gray"
+        app:errorEnabled="true"
+        android:textColor="@color/black"
+        android:textColorHint="#B71C1C">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:fontFamily="sans-serif"
+            android:hint=" Enter your email"
+            android:inputType="textEmailAddress"
+            android:minWidth="350dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/resetbtn"
+        android:layout_width="400dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/dark_red"
+        android:fontFamily="@font/carter_one"
+        android:text="Reset Password" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="181dp"
+        android:layout_marginTop="103dp"
+        android:layout_marginEnd="182dp"
+        android:layout_marginBottom="103dp"
+        android:indeterminate="true"
+        android:indeterminateTint="#2196F3"
+        android:visibility="invisible" />
+
+</RelativeLayout>
